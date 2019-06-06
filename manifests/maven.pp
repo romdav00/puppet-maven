@@ -50,7 +50,7 @@ class maven::maven(
       'maven_version' => defined('$maven_version') ? {
         true    => $::maven_version,
         default => undef,
-      }
+      },
     }
   }
 
@@ -84,8 +84,8 @@ class maven::maven(
       ensure  => link,
       target  => "/opt/apache-maven-${version}/bin/mvn",
       require => Exec['maven-untar'],
-    } ->
-    file { '/usr/local/bin/mvn':
+    }
+    -> file { '/usr/local/bin/mvn':
       ensure  => absent,
     }
   }

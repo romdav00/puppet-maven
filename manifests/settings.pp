@@ -148,8 +148,8 @@ define maven::settings($home = undef, $user = 'root', $group = 'root',
     owner  => $user,
     group  => $group,
     mode   => $dir_mask,
-  } ->
-  file { "${home_real}/.m2/settings.xml":
+  }
+  -> file { "${home_real}/.m2/settings.xml":
     owner   => $user,
     group   => $group,
     mode    => $file_mask,

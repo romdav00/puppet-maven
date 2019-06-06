@@ -164,14 +164,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  beaker-rspec (>= 3.0.0)
-  librarian-puppet (>= 2.0.0)
+  beaker-rspec (>= 6.2.0)
+  librarian-puppet (>= 3.0.0)
   puppet (>= 3.0)
   puppet-blacksmith (>= 3.0.0)
-  puppet-lint (>= 1.1.0)
-  puppetlabs_spec_helper (>= 0.8.0)
+  puppet-lint (>= 2.3.3)
+  puppetlabs_spec_helper (>= 2.3.1)
   rake
-  rspec-puppet (>= 1.0.0)
+  rspec-puppet (>= 2.6.11)
   simplecov
 
 BUNDLED WITH
